@@ -139,7 +139,12 @@ function App() {
               modern, competitive investment opportunities across diverse
               sectors.
             </p>
-            <button className="py-[20px] lg:py-[24px] w-[281px] border-t-2 border-b-2 flex justify-between items-center">
+            <button
+              onClick={() =>
+                window.open('mailto:deals@scaleupventures.co', '_blank')
+              }
+              className="py-[20px] lg:py-[24px] w-[281px] border-t-2 border-b-2 flex justify-between items-center"
+            >
               <p className="text-[14px] lg:text-[17.39px] leading-[26px] tracking-[2.435px] font-[700]">
                 CONTACT US
               </p>
