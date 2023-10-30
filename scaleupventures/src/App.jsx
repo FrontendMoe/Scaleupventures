@@ -5,6 +5,7 @@ import './App.css'
 import { arrow, house, logo } from './assets/icons'
 import bgVid from './assets/bgVid.mp4'
 import Footer from './components/Footer'
+import { useEffect } from 'react'
 function App() {
   const [count, setCount] = useState(0)
   const services = [
@@ -110,6 +111,23 @@ function App() {
       title: 'Revenue Streams:',
     },
   ]
+  const playAllVideos = () => {
+    const videos = document.querySelectorAll('video')
+    for (let i = 0; i < videos.length; i++) {
+      const video = videos[i]
+      video.muted = true // Force mute the video
+      video.addEventListener('ended', () => {
+        video.currentTime = 0 // Reset the video to the beginning
+        video.play() // Pause the video when it ends
+      })
+
+      video.play()
+    }
+  }
+
+  useEffect(() => {
+    playAllVideos()
+  }, [])
   return (
     <div>
       <section className="relative ">
