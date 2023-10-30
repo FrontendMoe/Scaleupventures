@@ -8,5 +8,5 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .padding {
-  @apply px-[190px];
+  @apply lg:px-[190px] px-[50px];
 }

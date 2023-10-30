@@ -123,14 +123,14 @@ function App() {
             muted
           ></video>
         </div>
-        <div className="relative space-y-[233px]  text-white py-[200px] padding bg-[#1d2bf5da]">
+        <div className="relative space-y-[100px] lg:space-y-[233px]  text-white py-[100px] lg:py-[200px] padding bg-[#1d2bf5da]">
           <div className="space-y-[40px]">
             <div>{logo}</div>
-            <p className="text-[42px] max-w-[692px] tracking-[-1.26px] leading-[57px] font-[400]">
+            <p className="text-[27px] lg:text-[42px] max-w-[692px] tracking-[-1.26px] lg:leading-[57px] font-[400]">
               Helping Small Businesses from Scale to Sale with Partners,
               Positioning and IP
             </p>
-            <p className="font-[400] text-[18px] leading-[40px] tracking-[0.36px]">
+            <p className="font-[400] text-[14px] lg:text-[18px]  leading-[26px] lg:leading-[40px] tracking-[0.36px]">
               <span className="font-bold">ScaleUp Ventures</span> is rolling up
               companies in 3 key verticals, infusing them cutting edge IP , cost
               and technology efficiencies to generate economies of scale and
@@ -139,38 +139,38 @@ function App() {
               modern, competitive investment opportunities across diverse
               sectors.
             </p>
-            <button className="py-[24px] w-[281px] border-t-2 border-b-2 flex justify-between items-center">
-              <p className="text-[17.39px] leading-[26px] tracking-[2.435px] font-[700]">
+            <button className="py-[20px] lg:py-[24px] w-[281px] border-t-2 border-b-2 flex justify-between items-center">
+              <p className="text-[14px] lg:text-[17.39px] leading-[26px] tracking-[2.435px] font-[700]">
                 CONTACT US
               </p>
               {arrow}
             </button>
           </div>
           <div className="space-y-[40px]">
-            <p className="text-center font-[400] text-[35px] tracking-[-1.05px] leading-[46px] mx-auto max-w-[560px]">
+            <p className="text-center font-[400] text-[30px] lg:text-[35px] tracking-[-1.05px] leading-[46px] mx-auto max-w-[560px]">
               Sectors We Target to Consolidate Small Businesses
             </p>
-            <div className="flex w-full justify-around">
+            <div className="lg:flex space-y-[30px] lg:space-y-0 w-full justify-around">
               {services.map((el, index) => (
                 <div
                   key={index}
-                  className="flex space-y-[26px] flex-col items-center"
+                  className="flex items-end space-x-10  lg:space-y-[26px] lg:flex-col lg:items-center"
                 >
                   <div className="">{house}</div>
-                  <p className="text-center">{el.name}</p>
+                  <p className=" lg:text-center mt-10">{el.name}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
       </section>
-      <section className="padding py-[150px] space-y-[135px] text-[#6B6E9E]">
-        <div className="space-y-[55px]">
-          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+      <section className="padding py-[50px] lg:py-[150px] space-y-[135px] text-[#6B6E9E]">
+        <div className="space-y-[30px] lg:space-y-[55px]">
+          <p className="text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]">
             Why Partner with ScaleUp Ventures:
           </p>
           <div className="w-[164px] border-2 border-[#1D2AF5]"></div>
-          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+          <div className="grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]">
             {whyUs.map((el, index) => (
               <div className="space-y-[25px]" key={index}>
                 <p className="font-bold text-[17.39px] leading-[26px] ">
@@ -183,16 +183,16 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="space-y-[55px]">
-          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+        <div className="space-y-[30px] lg:space-y-[55px]">
+          <p className="text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]">
             Strategy & Approach:{' '}
           </p>
           <div className="w-[164px] border-2 border-[#1D2AF5]"></div>
-          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+          <div className="grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]">
             {strategie.map((el, index) => (
               <div
                 className={`space-y-[25px] max-w-[539px] ${
-                  index === strategie.length - 1 && 'col-span-2'
+                  index === strategie.length - 1 && 'lg:col-span-2'
                 }`}
                 key={index}
               >
@@ -206,8 +206,8 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="space-y-[55px]">
-          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+        <div className="space-y-[30px] lg:space-y-[55px]">
+          <p className="text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]">
             Unique Value Proposition:
           </p>
           <p className="font-[500] text-[15] leading-[26px] ">
@@ -220,11 +220,11 @@ function App() {
             attractive acquisition targets.
           </p>
         </div>
-        <div className="space-y-[55px]">
-          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+        <div className="space-y-[30px] lg:space-y-[55px]">
+          <p className="text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]">
             The Opportunity{' '}
           </p>
-          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+          <div className="grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]">
             {oportunity.map((el, index) => (
               <div className={`space-y-[25px] max-w-[539px] `} key={index}>
                 <p className="font-bold text-[17.39px] leading-[26px] ">
@@ -237,15 +237,15 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="space-y-[55px]">
-          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+        <div className="space-y-[30px] lg:space-y-[55px]">
+          <p className="text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]">
             Financial Highlights{' '}
           </p>
-          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+          <div className="grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]">
             {Highlights.map((el, index) => (
               <div
                 className={`space-y-[25px]  ${
-                  index === Highlights.length - 1 && 'col-span-2'
+                  index === Highlights.length - 1 && 'lg:col-span-2'
                 }`}
                 key={index}
               >
