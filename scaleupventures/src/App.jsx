@@ -154,7 +154,7 @@ function App() {
               Helping Small Businesses from Scale to Sale with Partners,
               Positioning and IP
             </p>
-            <p className="font-[400] text-[14px] lg:text-[18px]  leading-[26px] lg:leading-[40px] tracking-[0.36px]">
+            <p className="font-[400] text-[14px] lg:text-[18px] max-w-[909px]  leading-[26px] lg:leading-[40px] tracking-[0.36px]">
               <span className="font-bold">ScaleUp Ventures</span> is rolling up
               companies in 3 key verticals, infusing them cutting edge IP , cost
               and technology efficiencies to generate economies of scale and
