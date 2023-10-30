@@ -165,10 +165,10 @@ function App() {
               {services.map((el, index) => (
                 <div
                   key={index}
-                  className="flex items-end space-x-10  lg:space-y-[26px] lg:flex-col lg:items-center"
+                  className="flex items-end space-x-10  lg:space-x-0 lg:space-y-[26px] lg:flex-col lg:items-center"
                 >
                   <div className="">{house}</div>
-                  <p className=" lg:text-center mt-10">{el.name}</p>
+                  <p className=" lg:text-center  lg:mt-0 mt-10">{el.name}</p>
                 </div>
               ))}
             </div>
