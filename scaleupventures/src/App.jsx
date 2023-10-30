@@ -123,7 +123,13 @@ function App() {
             muted
           ></video>
         </div>
-        <div className="relative space-y-[100px] lg:space-y-[233px]  text-white py-[100px] lg:py-[200px] padding bg-[#1d2bf5da]">
+        <div
+          style={{
+            background:
+              'linear-gradient(0deg, #1D2AF5 38.13%, rgba(30, 43, 246, 0.25) 100%)',
+          }}
+          className="relative space-y-[100px] lg:space-y-[233px]  text-white py-[100px] lg:py-[200px] padding bg-[#1d2bf5da]"
+        >
           <div className="space-y-[40px]">
             <div>{logo}</div>
             <p className="text-[27px] lg:text-[42px] max-w-[692px] tracking-[-1.26px] lg:leading-[57px] font-[400]">
