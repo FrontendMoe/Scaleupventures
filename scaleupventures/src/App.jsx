@@ -38,19 +38,25 @@ function App() {
       title: 'Experienced Leadership',
     },
     {
-      desc:
-        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
-      title: 'Experienced Leadership',
+      desc: 'Access to a diverse network of advisors and mentors.',
+      title: 'Broad Industry Network',
     },
     {
       desc:
-        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
-      title: 'Experienced Leadership',
+        'Integration of cutting-edge technologies and exclusive IP from government agencies.',
+      title: 'Strategic Tech Integration',
     },
     {
-      desc:
-        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
-      title: 'Experienced Leadership',
+      desc: 'Unique targeting to retiring baby boomers.',
+      title: 'Boomer Engagement',
+    },
+    {
+      desc: 'Commitment to transparency and ethical business practices.',
+      title: 'Trustworthy Stewardship',
+    },
+    {
+      desc: 'Systematic approach to acquisitions and growth.',
+      title: 'Model Scaling',
     },
   ]
   return (
@@ -107,14 +113,21 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="padding">
-        <div>
-          <p>Why Partner with ScaleUp Ventures:</p>
+      <section className="padding py-[150px] text-[#6B6E9E]">
+        <div className="space-y-[55px]">
+          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+            Why Partner with ScaleUp Ventures:
+          </p>
+          <div className="w-[164px] border-2 border-[#1D2AF5]"></div>
           <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
             {whyUs.map((el, index) => (
-              <div className="" key={index}>
-                <p>{el.title}</p>
-                <p>{el.desc}</p>
+              <div className="space-y-[25px]" key={index}>
+                <p className="font-bold text-[17.39px] leading-[26px] ">
+                  {el.title}
+                </p>
+                <p className="font-[500] text-[15] leading-[26px] ">
+                  {el.desc}
+                </p>
               </div>
             ))}
           </div>
