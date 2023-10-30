@@ -144,7 +144,7 @@ function App() {
         <div
           style={{
             background:
-              'linear-gradient(0deg, #1D2AF5 20.13%, rgba(30, 43, 246, 0.6) 100%)',
+              ' linear-gradient(180deg, #1B24B2 20.83%, rgba(30, 43, 246, 0.67) 100%)',
           }}
           className="relative space-y-[100px] lg:space-y-[233px]  text-white py-[100px] lg:py-[200px] padding bg-[#1d2bf5da]"
         >
