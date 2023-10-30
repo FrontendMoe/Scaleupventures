@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <footer className="bg-black py-[300px] padding space-y-[80px] text-center text-[#F2F3FF] w-full">
+    <footer className="bg-black py-[80px] lg:py-[300px] padding space-y-[80px] text-center text-[#F2F3FF] w-full">
       <div className="space-y-[40px]">
-        <p className="text-[35px] font-[400] leading-[26px] tracking-[-1.05px]">
+        <p className="text-[30px] lg:text-[35px] font-[400] leading-[34px] lg:leading-[26px] tracking-[-1.05px]">
           Invest with ScaleUp Ventures
         </p>
         <p className="text-[15px] font-[500] mx-auto max-w-[817px] leading-[26px] ">
