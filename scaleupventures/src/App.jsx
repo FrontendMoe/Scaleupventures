@@ -134,7 +134,7 @@ function App() {
         <div className="absolute  w-full h-full inset-0">
           <video
             src={bgVid}
-            className="w-full object-right h-[60%] md:h-full object-cover"
+            className="w-full object-right h-[60%] md:h-[90%] object-cover"
             loop
             autoPlay
             playsInline
