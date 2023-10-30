@@ -35,67 +35,67 @@ function App() {
     {
       desc:
         'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
-      title: 'Experienced Leadership',
+      title: 'Experienced <br />Leadership',
     },
     {
       desc: 'Access to a diverse network of advisors and mentors.',
-      title: 'Broad Industry Network',
+      title: 'Broad Industry <br />Network',
     },
     {
       desc:
         'Integration of cutting-edge technologies and exclusive IP from government agencies.',
-      title: 'Strategic Tech Integration',
+      title: 'Strategic Tech <br />Integration',
     },
     {
       desc: 'Unique targeting to retiring baby boomers.',
-      title: 'Boomer Engagement',
+      title: 'Boomer <br />Engagement',
     },
     {
       desc: 'Commitment to transparency and ethical business practices.',
-      title: 'Trustworthy Stewardship',
+      title: 'Trustworthy <br />Stewardship',
     },
     {
       desc: 'Systematic approach to acquisitions and growth.',
-      title: 'Model Scaling',
+      title: 'Model <br />Scaling',
     },
   ]
   const strategie = [
     {
       desc:
         'Identify and acquire businesses, with a particular focus on those owned by retiring baby boomers.',
-      title: 'Acquisition & Integration:',
+      title: 'Acquisition & <br />Integration:',
     },
     {
       desc:
         'Implement emerging technologies such as automation, AI, data analytics, and customer engagement tools.',
-      title: 'Technology & IP Enhancement:',
+      title: 'Technology & IP <br />Enhancement:',
     },
     {
       desc:
         'We delve deep into the acquired businesses to identify and address opportunities in marketing, operations, and technology.',
-      title: 'Strategic Tech Integration',
+      title: 'Strategic Tech <br />Integration',
     },
     {
       desc:
         "Our strategy doesn't just stop at growth. We structure and nurture these businesses with a clear exit strategy in mind. Our goal is to exit in 3-5 years, targeting an exit valuation of 4x the initial value.",
-      title: 'Plan & Position for Exit:',
+      title: 'Plan & Position <br />for Exit:',
     },
   ]
   const oportunity = [
     {
       desc:
         'With 10,000 baby boomer business owners retiring daily and over 90% never selling their businesses, a vast market is ripe for revitalization.',
-      title: 'Market Dynamics',
+      title: 'Market <br />Dynamics',
     },
     {
       desc:
         'We acquire and integrate key IP, from esteemed institutions like NASA and other agencies & institutions, adding unique value and competitive advantages to our acquisitions.',
-      title: 'Acquisition & Integration:',
+      title: 'Acquisition & <br />Integration:',
     },
     {
       desc:
-        'We delve deep into the acquired businesses to identify and address opportunities in marketing, operations, and technology.',
-      title: 'Strategic Tech Integration',
+        'We focus on cash flowing businesses in Government Contracting, Growth Marketing, and Technology Enabling firms.',
+      title: 'Target <br />Businesses',
     },
   ]
   const Highlights = [
@@ -175,7 +175,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="padding py-[50px] lg:py-[150px] space-y-[135px] text-[#6B6E9E]">
+      <section className="padding py-[30px] lg:py-[60px] space-y-[135px] text-[#6B6E9E]">
         <div className="space-y-[30px] lg:space-y-[55px]">
           <p className="text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]">
             Why Partner with ScaleUp Ventures:
@@ -184,9 +184,10 @@ function App() {
           <div className="grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]">
             {whyUs.map((el, index) => (
               <div className="space-y-[25px]" key={index}>
-                <p className="font-bold text-[17.39px] leading-[26px] ">
-                  {el.title}
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: el.title }}
+                  className="font-bold text-[17.39px] leading-[26px] "
+                ></p>
                 <p className="font-[500] text-[15] leading-[26px] ">
                   {el.desc}
                 </p>
@@ -207,9 +208,10 @@ function App() {
                 }`}
                 key={index}
               >
-                <p className="font-bold text-[17.39px] leading-[26px] ">
-                  {el.title}
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: el.title }}
+                  className="font-bold text-[17.39px] leading-[26px] "
+                ></p>
                 <p className="font-[500] text-[15] leading-[26px] ">
                   {el.desc}
                 </p>
@@ -238,9 +240,10 @@ function App() {
           <div className="grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]">
             {oportunity.map((el, index) => (
               <div className={`space-y-[25px] max-w-[539px] `} key={index}>
-                <p className="font-bold text-[17.39px] leading-[26px] ">
-                  {el.title}
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: el.title }}
+                  className="font-bold text-[17.39px] leading-[26px] "
+                ></p>
                 <p className="font-[500] text-[15] leading-[26px] ">
                   {el.desc}
                 </p>
