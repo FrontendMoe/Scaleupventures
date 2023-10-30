@@ -59,6 +59,57 @@ function App() {
       title: 'Model Scaling',
     },
   ]
+  const strategie = [
+    {
+      desc:
+        'Identify and acquire businesses, with a particular focus on those owned by retiring baby boomers.',
+      title: 'Acquisition & Integration:',
+    },
+    {
+      desc:
+        'Implement emerging technologies such as automation, AI, data analytics, and customer engagement tools.',
+      title: 'Technology & IP Enhancement:',
+    },
+    {
+      desc:
+        'We delve deep into the acquired businesses to identify and address opportunities in marketing, operations, and technology.',
+      title: 'Strategic Tech Integration',
+    },
+    {
+      desc:
+        "Our strategy doesn't just stop at growth. We structure and nurture these businesses with a clear exit strategy in mind. Our goal is to exit in 3-5 years, targeting an exit valuation of 4x the initial value.",
+      title: 'Plan & Position for Exit:',
+    },
+  ]
+  const oportunity = [
+    {
+      desc:
+        'With 10,000 baby boomer business owners retiring daily and over 90% never selling their businesses, a vast market is ripe for revitalization.',
+      title: 'Market Dynamics',
+    },
+    {
+      desc:
+        'We acquire and integrate key IP, from esteemed institutions like NASA and other agencies & institutions, adding unique value and competitive advantages to our acquisitions.',
+      title: 'Acquisition & Integration:',
+    },
+    {
+      desc:
+        'We delve deep into the acquired businesses to identify and address opportunities in marketing, operations, and technology.',
+      title: 'Strategic Tech Integration',
+    },
+  ]
+  const Highlights = [
+    {
+      desc:
+        'Businesses with at least $300k in EBITDA and a maximum price of $20 million. market is ripe for revitalization.',
+      title: 'Investment Criteria:',
+    },
+    {
+      desc:
+        'Anticipated revenue from the sale of enhanced businesses, ongoing operations, technology integration services, strategic partnerships, financial investments, and ancillary services.',
+      title: 'Revenue Streams:',
+    },
+  ]
   return (
     <div>
       <section className="relative ">
@@ -113,7 +164,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="padding py-[150px] text-[#6B6E9E]">
+      <section className="padding py-[150px] space-y-[135px] text-[#6B6E9E]">
         <div className="space-y-[55px]">
           <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
             Why Partner with ScaleUp Ventures:
@@ -132,7 +183,84 @@ function App() {
             ))}
           </div>
         </div>
+        <div className="space-y-[55px]">
+          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+            Strategy & Approach:{' '}
+          </p>
+          <div className="w-[164px] border-2 border-[#1D2AF5]"></div>
+          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+            {strategie.map((el, index) => (
+              <div
+                className={`space-y-[25px] max-w-[539px] ${
+                  index === strategie.length - 1 && 'col-span-2'
+                }`}
+                key={index}
+              >
+                <p className="font-bold text-[17.39px] leading-[26px] ">
+                  {el.title}
+                </p>
+                <p className="font-[500] text-[15] leading-[26px] ">
+                  {el.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-[55px]">
+          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+            Unique Value Proposition:
+          </p>
+          <p className="font-[500] text-[15] leading-[26px] ">
+            Unlocking the untapped potential of small businesses across sectors
+            by infusing them with cutting-edge technologies, innovation, and
+            exclusive intellectual property. We revitalize traditional
+            operations with automation, data-driven insights, customer
+            engagement, optimization, sustainability practices, and strategic IP
+            integration, transforming them into modern, competitive, and
+            attractive acquisition targets.
+          </p>
+        </div>
+        <div className="space-y-[55px]">
+          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+            The Opportunity{' '}
+          </p>
+          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+            {oportunity.map((el, index) => (
+              <div className={`space-y-[25px] max-w-[539px] `} key={index}>
+                <p className="font-bold text-[17.39px] leading-[26px] ">
+                  {el.title}
+                </p>
+                <p className="font-[500] text-[15] leading-[26px] ">
+                  {el.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="space-y-[55px]">
+          <p className="text-[35px] font-[400] leading-[46px] tracking-[-1.05px]">
+            Financial Highlights{' '}
+          </p>
+          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+            {Highlights.map((el, index) => (
+              <div
+                className={`space-y-[25px]  ${
+                  index === Highlights.length - 1 && 'col-span-2'
+                }`}
+                key={index}
+              >
+                <p className="font-bold text-[17.39px] leading-[26px] ">
+                  {el.title}
+                </p>
+                <p className="font-[500] text-[15] leading-[26px] ">
+                  {el.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
+
       <Footer></Footer>
     </div>
   )
