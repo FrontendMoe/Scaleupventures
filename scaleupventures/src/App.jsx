@@ -31,20 +31,42 @@ function App() {
       ),
     },
   ]
+  const whyUs = [
+    {
+      desc:
+        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
+      title: 'Experienced Leadership',
+    },
+    {
+      desc:
+        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
+      title: 'Experienced Leadership',
+    },
+    {
+      desc:
+        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
+      title: 'Experienced Leadership',
+    },
+    {
+      desc:
+        'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
+      title: 'Experienced Leadership',
+    },
+  ]
   return (
     <div>
       <section className="relative ">
         <div className="absolute  w-full h-full inset-0">
           <video
             src={bgVid}
-            className="w-full h-full object-cover"
+            className="w-full object-right h-full object-cover"
             loop
             autoPlay
             playsInline
             muted
           ></video>
         </div>
-        <div className="relative space-y-[233px]  text-white py-[200px] px-[190px] bg-[#1d2bf5da]">
+        <div className="relative space-y-[233px]  text-white py-[200px] padding bg-[#1d2bf5da]">
           <div className="space-y-[40px]">
             <div>{logo}</div>
             <p className="text-[42px] max-w-[692px] tracking-[-1.26px] leading-[57px] font-[400]">
@@ -82,6 +104,19 @@ function App() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="padding">
+        <div>
+          <p>Why Partner with ScaleUp Ventures:</p>
+          <div className="grid grid-cols-3 gap-x-[90px] gap-y-[70px]">
+            {whyUs.map((el, index) => (
+              <div className="" key={index}>
+                <p>{el.title}</p>
+                <p>{el.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
