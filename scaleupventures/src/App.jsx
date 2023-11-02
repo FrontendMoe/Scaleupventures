@@ -276,7 +276,7 @@ function App() {
 								<p className='text-[47.39px] lg:block hidden lg:w-fit w-[100px] font-bold'>
 									{el.id}
 								</p>
-								<p className='text-[47.39px] hidden lg:w-fit w-[100px] font-bold'>
+								<p className='text-[47.39px]  lg:w-fit w-[100px] font-bold'>
 									{el.mobId}
 								</p>
 								<div>{lightBorder}</div>
