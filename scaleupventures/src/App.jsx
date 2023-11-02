@@ -144,8 +144,8 @@ function App() {
 						background:
 							'linear-gradient(0deg, #2C3372 0%, rgba(25, 30, 76, 0.00) 100%)',
 					}}
-					className='h-full w-full absolute top-0 left-0'></div>
-				<div className='absolute z-20  h-[1000px] inset-0 '>
+					className='h-[120%] w-full absolute top-0 left-0'></div>
+				<div className='absolute  z-20  h-[1000px] inset-0 '>
 					<div className='bg-[#251D42] absolute blur-[40px] lg:blur-[122px] w-[140vw] -ml-[20vw] -mt-[40vh] h-[140vh] lg:h-[180vh]'></div>
 					<div className='w-[650px] aspect-square ml-[10%] mt-[10%] blur-[182px] absolute bg-[#192193] rounded-full'>
 						{' '}
@@ -195,7 +195,7 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className='px-[30px] bg-[#2E3573]  lg:px-[100px]  py-[30px] lg:py-[60px] text-[#D5D5D5]'>
+			<section className='px-[30px] relative bg-[#2E3573]  lg:px-[100px]  py-[30px] lg:py-[60px] text-[#D5D5D5]'>
 				<div className='space-y-[30px] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Why Partner with ScaleUp Ventures:
@@ -216,7 +216,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
+				<div className='space-y-[30px] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Strategy & Approach:{' '}
 					</p>
@@ -238,7 +238,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] lg:space-y-[55px]'>
+				<div className='space-y-[30px] lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Unique Value Proposition:
 					</p>
@@ -252,7 +252,7 @@ function App() {
 						attractive acquisition targets.
 					</p>
 				</div>
-				<div className='space-y-[30px] lg:space-y-[55px]'>
+				<div className='space-y-[30px] lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						The Opportunity{' '}
 					</p>
@@ -271,7 +271,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] lg:space-y-[55px]'>
+				<div className='space-y-[30px] lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Financial Highlights{' '}
 					</p>
