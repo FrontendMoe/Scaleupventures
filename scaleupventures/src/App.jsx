@@ -182,7 +182,7 @@ function App() {
 						{' '}
 					</div>
 				</div>
-				<div className='relative z-30 pb-[10vh] lg:pb-[80vh] space-y-[100px] lg:space-y-[233px]  text-white pt-[100px] lg:pt-[200px] padding '>
+				<div className='relative z-30 pb-[10vh] lg:pb-[60vh] space-y-[100px] lg:space-y-[233px]  text-white pt-[100px] lg:pt-[200px] padding '>
 					<div className='space-y-[40px]'>
 						<div>{logo}</div>
 						<p className='text-[27px] lg:text-[42px] max-w-[692px] tracking-[-1.26px] lg:leading-[57px] font-[400]'>
