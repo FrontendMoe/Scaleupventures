@@ -271,7 +271,9 @@ function App() {
 								className={`flex space-x-[15px] lg:space-x-[25px] ${
 									index === 0 ? 'lg:-ml-[20px]' : 'lg:ml-[20px]'
 								}`}>
-								<p className='text-[47.39px] w-[100px] font-bold'>{el.id}</p>
+								<p className='text-[47.39px] lg:w-fit w-[100px] font-bold'>
+									{el.id}
+								</p>
 								<div>{lightBorder}</div>
 								<div className={`space-y-[25px] max-w-[539px] `}>
 									<p
