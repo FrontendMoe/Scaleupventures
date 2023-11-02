@@ -220,8 +220,9 @@ function App() {
 			</section>
 			<section className='px-[30px] relative bg-[#2E3573]  lg:px-[100px]  py-[30px] lg:py-[60px] text-[#D5D5D5]'>
 				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
-					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
-						Why Partner with ScaleUp Ventures:
+					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
+						Why Partner with ScaleUp <br />
+						Ventures?
 					</p>
 					<div className='grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
 						{whyUs.map((el, index) => (
