@@ -5,14 +5,20 @@ import blurbg from './assets/bg.svg';
 import './App.css';
 import {
 	BroadIndustry,
+	acquision,
 	arrow,
 	bg,
+	bigLogo,
 	darkBorder,
 	experiencedLeadership,
 	house,
+	investment,
 	lightBorder,
 	logo,
+	revenueStream,
 	strategicTech,
+	targetBusiness,
+	whiteDynamics,
 } from './assets/icons';
 import bgVid from './assets/bgVid.mp4';
 import Footer from './components/Footer';
@@ -99,24 +105,29 @@ function App() {
 	];
 	const oportunity = [
 		{
+			icon: whiteDynamics,
 			desc: 'With 10,000 baby boomer business owners retiring daily and over 90% never selling their businesses, a vast market is ripe for revitalization.',
 			title: 'Market <br />Dynamics',
 		},
 		{
+			icon: acquision,
 			desc: 'We acquire and integrate key IP, from esteemed institutions like NASA and other agencies & institutions, adding unique value and competitive advantages to our acquisitions.',
 			title: 'Acquisition & <br />Integration:',
 		},
 		{
+			icon: targetBusiness,
 			desc: 'We focus on cash flowing businesses in Government Contracting, Growth Marketing, and Technology Enabling firms.',
 			title: 'Target <br />Businesses',
 		},
 	];
 	const Highlights = [
 		{
+			icon: investment,
 			desc: 'Businesses with at least $300k in EBITDA and a maximum price of $20 million. market is ripe for revitalization.',
 			title: 'Investment Criteria:',
 		},
 		{
+			icon: revenueStream,
 			desc: 'Anticipated revenue from the sale of enhanced businesses, ongoing operations, technology integration services, strategic partnerships, financial investments, and ancillary services.',
 			title: 'Revenue Streams:',
 		},
@@ -153,7 +164,7 @@ function App() {
 				<div className='absolute  bottom-0 w-full h-full '>
 					<video
 						src={bgVid}
-						className='w-full object-right h-full pt-[40vh] lg:pt-[80vh] bottom-0 object-cover'
+						className='w-full  object-right h-full pt-[80vh] md:pt-[50vh]  lg:pt-[80vh] bottom-0 object-cover'
 						loop
 						autoPlay
 						playsInline
@@ -171,7 +182,7 @@ function App() {
 						{' '}
 					</div>
 				</div>
-				<div className='relative z-30 pb-[40vh] lg:pb-[80vh] space-y-[100px] lg:space-y-[233px]  text-white pt-[100px] lg:pt-[200px] padding '>
+				<div className='relative z-30 pb-[10vh] lg:pb-[80vh] space-y-[100px] lg:space-y-[233px]  text-white pt-[100px] lg:pt-[200px] padding '>
 					<div className='space-y-[40px]'>
 						<div>{logo}</div>
 						<p className='text-[27px] lg:text-[42px] max-w-[692px] tracking-[-1.26px] lg:leading-[57px] font-[400]'>
@@ -224,7 +235,7 @@ function App() {
 				</div>
 			</section>
 			<section className='px-[30px] relative bg-[#2E3573]  lg:px-[100px]  py-[30px] lg:py-[60px] text-[#D5D5D5]'>
-				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
+				<div className='space-y-[30px]  lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Why Partner with ScaleUp <br />
 						Ventures?
@@ -248,7 +259,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
+				<div className='space-y-[30px]  lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Strategy & Approach:{' '}
 					</p>
@@ -274,8 +285,9 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh] lg:space-y-[55px]'>
-					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
+				<div className='space-y-[30px] py-[50px] lg:py-[77px] text-white text-center  lg:-translate-y-[40vh] lg:space-y-[55px]'>
+					<div className='w-fit mx-auto'>{bigLogo}</div>
+					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Unique Value Proposition:
 					</p>
 					<p className='font-[500] text-[15] leading-[26px] '>
@@ -288,8 +300,8 @@ function App() {
 						attractive acquisition targets.
 					</p>
 				</div>
-				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh] lg:space-y-[55px]'>
-					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
+				<div className='space-y-[30px]  text-white text-center  lg:-translate-y-[40vh] lg:space-y-[55px]'>
+					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						The Opportunity{' '}
 					</p>
 					<div className='grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
@@ -297,6 +309,7 @@ function App() {
 							<div
 								className={`space-y-[25px] max-w-[539px] `}
 								key={index}>
+								<div className='w-fit mx-auto'>{el.icon}</div>
 								<p
 									dangerouslySetInnerHTML={{ __html: el.title }}
 									className='font-bold text-[17.39px] leading-[26px] '></p>
@@ -307,17 +320,16 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh] lg:space-y-[55px]'>
+				<div className='space-y-[30px] text-center text-white py-[50px] lg:py-[90px]  lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Financial Highlights{' '}
 					</p>
-					<div className='grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
+					<div className='grid  lg:grid-cols-2 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
 						{Highlights.map((el, index) => (
 							<div
-								className={`space-y-[25px]  ${
-									index === Highlights.length - 1 && 'lg:col-span-2'
-								}`}
+								className={`space-y-[25px] s`}
 								key={index}>
+								<div className='mx-auto w-fit'>{el.icon}</div>
 								<p className='font-bold text-[17.39px] leading-[26px] '>
 									{el.title}
 								</p>
