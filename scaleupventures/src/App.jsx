@@ -3,7 +3,16 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import blurbg from './assets/bg.svg';
 import './App.css';
-import { arrow, bg, house, logo } from './assets/icons';
+import {
+	BroadIndustry,
+	arrow,
+	bg,
+	darkBorder,
+	experiencedLeadership,
+	house,
+	logo,
+	strategicTech,
+} from './assets/icons';
 import bgVid from './assets/bgVid.mp4';
 import Footer from './components/Footer';
 import { useEffect } from 'react';
@@ -37,26 +46,32 @@ function App() {
 		{
 			desc: 'Led by industry veterans with a proven track record in acquisitions, technology integration, and business scaling.',
 			title: 'Experienced <br />Leadership',
+			icon: experiencedLeadership,
 		},
 		{
 			desc: 'Access to a diverse network of advisors and mentors.',
 			title: 'Broad Industry <br />Network',
+			icon: BroadIndustry,
 		},
 		{
 			desc: 'Integration of cutting-edge technologies and exclusive IP from government agencies.',
 			title: 'Strategic Tech <br />Integration',
+			icon: strategicTech,
 		},
 		{
 			desc: 'Unique targeting to retiring baby boomers.',
 			title: 'Boomer <br />Engagement',
+			icon: experiencedLeadership,
 		},
 		{
 			desc: 'Commitment to transparency and ethical business practices.',
 			title: 'Trustworthy <br />Stewardship',
+			icon: BroadIndustry,
 		},
 		{
 			desc: 'Systematic approach to acquisitions and growth.',
 			title: 'Model <br />Scaling',
+			icon: strategicTech,
 		},
 	];
 	const strategie = [
@@ -208,18 +223,21 @@ function App() {
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Why Partner with ScaleUp Ventures:
 					</p>
-					<div className='w-[164px] border-2 border-[#1D2AF5]'></div>
 					<div className='grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
 						{whyUs.map((el, index) => (
 							<div
-								className='space-y-[25px]'
-								key={index}>
-								<p
-									dangerouslySetInnerHTML={{ __html: el.title }}
-									className='font-bold text-[17.39px] leading-[26px] '></p>
-								<p className='font-[500] text-[15] leading-[26px] '>
-									{el.desc}
-								</p>
+								key={index}
+								className='flex space-x-[35px]'>
+								<div>{darkBorder}</div>
+								<div className='space-y-[25px]'>
+									<div>{el.icon}</div>
+									<p
+										dangerouslySetInnerHTML={{ __html: el.title }}
+										className='font-bold text-[17.39px] leading-[26px] '></p>
+									<p className='font-[500] text-[15] leading-[26px] '>
+										{el.desc}
+									</p>
+								</div>
 							</div>
 						))}
 					</div>
