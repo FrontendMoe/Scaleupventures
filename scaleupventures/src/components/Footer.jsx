@@ -22,7 +22,7 @@ function Footer() {
 					Contact us to explore collaboration and investment possibilities.
 				</span>
 			</p>
-			<div>
+			<div className='w-fit mx-auto'>
 				<button
 					onClick={() =>
 						window.open('mailto:deals@scaleupventures.co', '_blank')
