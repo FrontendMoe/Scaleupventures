@@ -320,7 +320,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] text-center text-white py-[50px] lg:py-[90px]  lg:-translate-y-[40vh] lg:space-y-[55px]'>
+				<div className='space-y-[30px] text-center text-white pt-[50px] lg:pt-[90px]  lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Financial Highlights{' '}
 					</p>
