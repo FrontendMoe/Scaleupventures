@@ -89,11 +89,13 @@ function App() {
 		},
 		{
 			id: 3,
+			mobId: 2,
 			desc: 'Implement emerging technologies such as automation, AI, data analytics, and customer engagement tools.',
 			title: 'Technology & IP <br />Enhancement:',
 		},
 		{
 			id: 2,
+			mobId: 3,
 			desc: 'We delve deep into the acquired businesses to identify and address opportunities in marketing, operations, and technology.',
 			title: 'Strategic Tech <br />Integration',
 		},
@@ -271,8 +273,11 @@ function App() {
 								className={`flex space-x-[15px] lg:space-x-[25px] ${
 									index === 0 ? 'lg:-ml-[20px]' : 'lg:ml-[20px]'
 								}`}>
-								<p className='text-[47.39px] lg:w-fit w-[100px] font-bold'>
+								<p className='text-[47.39px] lg:block hidden lg:w-fit w-[100px] font-bold'>
 									{el.id}
+								</p>
+								<p className='text-[47.39px] hidden lg:w-fit w-[100px] font-bold'>
+									{el.mobId}
 								</p>
 								<div>{lightBorder}</div>
 								<div className={`space-y-[25px] max-w-[539px] `}>
