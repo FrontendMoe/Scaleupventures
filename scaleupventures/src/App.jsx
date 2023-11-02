@@ -178,10 +178,18 @@ function App() {
 							{arrow}
 						</button>
 					</div>
-					<div className='space-y-[40px]'>
-						<p className='text-center font-[400] text-[30px] lg:text-[35px] tracking-[-1.05px] leading-[46px] mx-auto max-w-[560px]'>
-							Sectors We Target to Consolidate Small Businesses
-						</p>
+					<div className='space-y-[70px]'>
+						<div className='space-y-[40px]'>
+							<p className='text-center font-[400] text-[30px] lg:text-[35px] tracking-[-1.05px] leading-[46px] mx-auto max-w-[560px]'>
+								Sectors We Target to Consolidate Small Businesses
+							</p>
+							<p className='text-[18px] font-[400] text-white tracking-[0.36px] leading-[40px] text-center mx-auto max-w-[794px]'>
+								<span className='font-bold'>ScaleUp Ventures</span> is rolling
+								up companies in 3 key verticals, infusing them cutting edge IP ,
+								cost and technology efficiencies to generate economies of scale
+								and enterprise value.{' '}
+							</p>
+						</div>
 						<div className='lg:flex space-y-[30px] lg:space-y-0 w-full justify-around'>
 							{services.map((el, index) => (
 								<div
