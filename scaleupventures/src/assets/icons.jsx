@@ -330,6 +330,39 @@ export const darkBorder = (
 		</defs>
 	</svg>
 );
+export const lightBorder = (
+	<svg
+		width='3'
+		height='227'
+		viewBox='0 0 3 227'
+		fill='none'
+		xmlns='http://www.w3.org/2000/svg'>
+		<line
+			opacity='0.2'
+			x1='1.5'
+			y1='6.55671e-08'
+			x2='1.49999'
+			y2='227'
+			stroke='url(#paint0_linear_1455_175)'
+			stroke-width='3'
+		/>
+		<defs>
+			<linearGradient
+				id='paint0_linear_1455_175'
+				x1='7.26577e-08'
+				y1='4.8377'
+				x2='-2.36077e-06'
+				y2='222.534'
+				gradientUnits='userSpaceOnUse'>
+				<stop stop-color='white' />
+				<stop
+					offset='1'
+					stop-color='#1D2AF5'
+				/>
+			</linearGradient>
+		</defs>
+	</svg>
+);
 
 export const bg = (
 	<svg

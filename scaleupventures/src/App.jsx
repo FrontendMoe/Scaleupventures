@@ -10,6 +10,7 @@ import {
 	darkBorder,
 	experiencedLeadership,
 	house,
+	lightBorder,
 	logo,
 	strategicTech,
 } from './assets/icons';
@@ -77,17 +78,21 @@ function App() {
 	const strategie = [
 		{
 			desc: 'Identify and acquire businesses, with a particular focus on those owned by retiring baby boomers.',
+			id: 1,
 			title: 'Acquisition & <br />Integration:',
 		},
 		{
+			id: 3,
 			desc: 'Implement emerging technologies such as automation, AI, data analytics, and customer engagement tools.',
 			title: 'Technology & IP <br />Enhancement:',
 		},
 		{
+			id: 2,
 			desc: 'We delve deep into the acquired businesses to identify and address opportunities in marketing, operations, and technology.',
 			title: 'Strategic Tech <br />Integration',
 		},
 		{
+			id: 4,
 			desc: "Our strategy doesn't just stop at growth. We structure and nurture these businesses with a clear exit strategy in mind. Our goal is to exit in 3-5 years, targeting an exit valuation of 4x the initial value.",
 			title: 'Plan & Position <br />for Exit:',
 		},
@@ -244,23 +249,27 @@ function App() {
 					</div>
 				</div>
 				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
-					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
+					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Strategy & Approach:{' '}
 					</p>
 					<div className='w-[164px] border-2 border-[#1D2AF5]'></div>
-					<div className='grid  lg:grid-cols-3 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
+					<div className='grid  lg:grid-cols-2  gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
 						{strategie.map((el, index) => (
 							<div
-								className={`space-y-[25px] max-w-[539px] ${
-									index === strategie.length - 1 && 'lg:col-span-2'
-								}`}
-								key={index}>
-								<p
-									dangerouslySetInnerHTML={{ __html: el.title }}
-									className='font-bold text-[17.39px] leading-[26px] '></p>
-								<p className='font-[500] text-[15] leading-[26px] '>
-									{el.desc}
-								</p>
+								key={index}
+								className={`flex space-x-[25px] ${
+									index === 0 ? '-ml-[20px]' : 'ml-[20px]'
+								}`}>
+								<p className='text-[47.39px] font-bold'>{el.id}</p>
+								<div>{lightBorder}</div>
+								<div className={`space-y-[25px] max-w-[539px] `}>
+									<p
+										dangerouslySetInnerHTML={{ __html: el.title }}
+										className='font-bold text-[17.39px] leading-[26px] '></p>
+									<p className='font-[500] text-[15] leading-[26px] '>
+										{el.desc}
+									</p>
+								</div>
 							</div>
 						))}
 					</div>
