@@ -211,8 +211,8 @@ function App() {
 					</div>
 					<div className='space-y-[70px]'>
 						<div className='space-y-[40px]'>
-							<p className='text-center font-[400] text-[30px] lg:text-[35px] tracking-[-1.05px] leading-[46px] mx-auto max-w-[560px]'>
-								Sectors We Target to Consolidate Small Businesses
+							<p className='text-center font-[700] text-[30px] lg:text-[35px] tracking-[-1.05px] leading-[46px] mx-auto max-w-[560px]'>
+								Sectors We Target{' '}
 							</p>
 							<p className='text-[18px] font-[400] text-white tracking-[0.36px] leading-[40px] text-center mx-auto max-w-[794px]'>
 								<span className='font-bold'>ScaleUp Ventures</span> is rolling
