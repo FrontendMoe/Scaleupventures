@@ -196,7 +196,7 @@ function App() {
 				</div>
 			</section>
 			<section className='px-[30px] relative bg-[#2E3573]  lg:px-[100px]  py-[30px] lg:py-[60px] text-[#D5D5D5]'>
-				<div className='space-y-[30px] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
+				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Why Partner with ScaleUp Ventures:
 					</p>
@@ -216,7 +216,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
+				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#1D2AF5]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Strategy & Approach:{' '}
 					</p>
@@ -238,7 +238,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] lg:-translate-y-[40vh] lg:space-y-[55px]'>
+				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Unique Value Proposition:
 					</p>
@@ -252,7 +252,7 @@ function App() {
 						attractive acquisition targets.
 					</p>
 				</div>
-				<div className='space-y-[30px] lg:-translate-y-[40vh] lg:space-y-[55px]'>
+				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						The Opportunity{' '}
 					</p>
@@ -271,7 +271,7 @@ function App() {
 						))}
 					</div>
 				</div>
-				<div className='space-y-[30px] lg:-translate-y-[40vh] lg:space-y-[55px]'>
+				<div className='space-y-[30px] -translate-y-[20vh] lg:-translate-y-[40vh] lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
 						Financial Highlights{' '}
 					</p>
