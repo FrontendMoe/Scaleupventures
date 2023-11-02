@@ -237,7 +237,7 @@ function App() {
 				</div>
 			</section>
 			<section className='px-[30px] relative bg-[#2E3573]  lg:px-[100px]  py-[30px] lg:py-[60px] text-[#D5D5D5]'>
-				<div className='space-y-[30px]  lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
+				<div className='space-y-[30px] lg:text-start text-center lg:-translate-y-[40vh]  lg:py-[90px] py-[60px] px-[20px] lg:px-[90px]  bg-[#251D42]  lg:space-y-[55px]'>
 					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Why Partner with ScaleUp <br />
 						Ventures?
@@ -246,10 +246,10 @@ function App() {
 						{whyUs.map((el, index) => (
 							<div
 								key={index}
-								className='flex space-x-[35px]'>
-								<div>{darkBorder}</div>
+								className='flex lg:space-x-[35px]'>
+								<div className='lg:block hidden'>{darkBorder}</div>
 								<div className='space-y-[25px]'>
-									<div>{el.icon}</div>
+									<div className='lg:mx-0 mx-auto w-fit'>{el.icon}</div>
 									<p
 										dangerouslySetInnerHTML={{ __html: el.title }}
 										className='font-bold text-[17.39px] leading-[26px] '></p>
@@ -276,7 +276,7 @@ function App() {
 								<p className='text-[47.39px] lg:block hidden lg:w-fit w-[100px] font-bold'>
 									{el.id}
 								</p>
-								<p className='text-[47.39px]  lg:w-fit w-[100px] font-bold'>
+								<p className='text-[47.39px] lg:hidden  lg:w-fit w-[100px] font-bold'>
 									{el.mobId ? el.mobId : el.id}
 								</p>
 								<div>{lightBorder}</div>
