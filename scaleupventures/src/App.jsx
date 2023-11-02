@@ -268,10 +268,10 @@ function App() {
 						{strategie.map((el, index) => (
 							<div
 								key={index}
-								className={`flex space-x-[25px] ${
-									index === 0 ? '-ml-[20px]' : 'ml-[20px]'
+								className={`flex space-x-[15px] lg:space-x-[25px] ${
+									index === 0 ? 'lg:-ml-[20px]' : 'lg:ml-[20px]'
 								}`}>
-								<p className='text-[47.39px] font-bold'>{el.id}</p>
+								<p className='text-[47.39px] w-[100px] font-bold'>{el.id}</p>
 								<div>{lightBorder}</div>
 								<div className={`space-y-[25px] max-w-[539px] `}>
 									<p
@@ -321,7 +321,7 @@ function App() {
 					</div>
 				</div>
 				<div className='space-y-[30px] text-center text-white py-[50px] lg:py-[90px]  lg:-translate-y-[40vh] lg:space-y-[55px]'>
-					<p className='text-[27px] lg:text-[35px] font-[400] lg:leading-[46px] tracking-[-1.05px]'>
+					<p className='text-[27px] lg:text-[35px] font-[700] lg:leading-[46px] tracking-[-1.05px]'>
 						Financial Highlights{' '}
 					</p>
 					<div className='grid  lg:grid-cols-2 gap-x-[90px] gap-y-[30px] lg:gap-y-[70px]'>
