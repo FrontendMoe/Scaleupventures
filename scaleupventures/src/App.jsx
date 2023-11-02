@@ -277,7 +277,7 @@ function App() {
 									{el.id}
 								</p>
 								<p className='text-[47.39px]  lg:w-fit w-[100px] font-bold'>
-									{el.mobId}
+									{el.mobId ? el.mobId : el.id}
 								</p>
 								<div>{lightBorder}</div>
 								<div className={`space-y-[25px] max-w-[539px] `}>
